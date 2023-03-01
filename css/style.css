@@ -939,7 +939,6 @@ button.catalog__filter-btnline {
 }
 
 .filter__item-drop {
-    margin-bottom: 20px;
     position: relative;
     cursor: pointer;
 }
@@ -961,6 +960,7 @@ button.catalog__filter-btnline {
 .aside-filter__content {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 .aside-filter__content-box {
     width: 50%;
@@ -1009,4 +1009,72 @@ button.catalog__filter-btnline {
 
 .aside-filter__content.aside-filter__content-radio {
     flex-wrap: nowrap;
+}
+
+.irs--flat {
+    width: 100%;
+    margin-top: -15px;
+}
+
+
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+    top: 55px;
+    padding: 0;
+    text-decoration: underline;
+    text-shadow: none;
+    background-color:transparent;
+    border-radius: 0;
+    font-family: 'Barlow',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+    visibility: visible !important;
+    padding-left: 27px;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    display: none;
+}
+
+.irs-min::before ,
+.irs-max::before {
+    position: absolute;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    left: 0;
+}
+
+.irs-min::before {
+    content:'от';
+}
+
+.irs-max::before {
+    content:'до';
+}
+.irs--flat .irs-line {
+    top: 25px;
+    height: 1px;
+    background-color:#E0E0E0;
+    border-radius: 0;
+}
+/* border: 1px solid #E0E0E0; */
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 3px;
+    background-color: #1C62CD;
+}
+
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 8px;
+    height: 8px;
+    background-color: #1C62CD;
+    border-radius: 50%;
+}
+
+.irs--flat .irs-handle>i:first-child, .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
 }
