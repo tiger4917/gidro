@@ -10,7 +10,7 @@ $(function(){
         e.preventDefault();
 
         $($(this).siblings()).removeClass('tab--active');
-        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
+        $($(this).parent().find('.search__content').find('div')).removeClass('tabs-content--active');
 
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
@@ -58,6 +58,9 @@ $(function(){
             normalFill:"#c4c4c4"
           });
           
+          $('.menu__btn').on('click', function(){
+            $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
+          })
         
 });
 
